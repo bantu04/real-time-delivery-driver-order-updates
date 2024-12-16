@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Kitchen Screen</h1>
+    <h2>Driver/s Arrived:</h2>
+    <ul id="orderList"></ul>
+    <button onclick="clearAllOrders()">Clear All Orders</button>
+
+    <h2>Live Announcement:</h2>
+    <button id="recordButton" onmousedown="startLiveAnnouncement()" onmouseup="stopLiveAnnouncement()">Hold to Speak</button>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="kitchen.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Driver Screen</h1>
+    <h3>All drivers requested to enter your order number to get updates, and Kindly wait outside untill your order is ready collect.</h3>
+    <input id="driverInput" type="number" class="input" placeholder="Enter order number">
+    <button onclick="addOrder()">Add Order</button>
+    
+    <h2>Driver Arrived:</h2>
+    <ul id="orderList"></ul>
+    
+    <h2>Ready to Collect:</h2>
+    <ul id="readyToCollectList"></ul>
+
+    <h2 class="last">All Driver's are Instructed to Pay Attention to Announcements</h2>
+    <audio id="announcementAudio" autoplay></audio>
+
+    <script src="https://cdn.socket.io/4.0.0/socket.io.min.js"></script>
+    <script src="driver.js"></script>
+</body>
+</html>
